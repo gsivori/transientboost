@@ -6,13 +6,21 @@ It requires mostly Julia >1.7. Python >3.7 but was only used for certain data an
 Models files are:
 
 funs.jl: functions file -- not all functions are utilized.
+
 lifneur.jl : two-compartmental model of LIF neuron using spike trace-based synaptic plasticity rule.
+
 bpHVAneur.jl: same as above but for calcium-based synaptic plasticity rule and transient boosting of somato-dendritic coupling.
+
 bp_full.jl: same as above but including NMDA receptor dynamics.
+
 lif_burst_input.jl : two-compartmental model to explore tuning time at different input bursting units.
+
 stdp.jl: model adapted for STDP protocol.
+
 net.jl: recurrent network model.
+
 Data-generating and figure-generating files:
+
 
 datafigs1-3.jl: generates data for Figures 1 to 3.
 suppfig*.jl, Fig*.jl, fig*.ipynb are used to generate figures. 
